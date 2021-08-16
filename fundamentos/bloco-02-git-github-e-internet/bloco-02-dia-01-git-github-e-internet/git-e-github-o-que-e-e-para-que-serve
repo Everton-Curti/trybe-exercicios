@@ -1,0 +1,27 @@
+git init
+resultado: Initialized empty Git repository in /home/everton/exercicio-git/.git/
+
+git add .
+
+git commit -m 'meu primeiro commit'
+resultado: [master (root-commit) 29c1a4e] meu primeiro commit
+ 	    2 files changed, 5 insertions(+)
+ 	    create mode 100644 readme.md
+            create mode 100644 trybe-skills.txt
+            
+git remote add orign git@github.com:Everton-Curti/trybe-exercicios.git
+
+git push orign master
+resultado: 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 316 bytes | 22.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:Everton-Curti/trybe-exercicios.git
+ * [new branch]      master -> master
+ 
+ 
+
+

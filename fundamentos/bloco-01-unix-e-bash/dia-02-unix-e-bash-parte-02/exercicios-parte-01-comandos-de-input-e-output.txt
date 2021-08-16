@@ -1,0 +1,29 @@
+cat > skills.txt
+internet
+Unix
+Bash
+
+cat >> skills2.txt 
+SQL
+MongoDb
+HTML
+CSS
+JavaScript
+
+sort < skills2.txt
+
+wc -l skills2.txt
+
+sort < skills2.txt | head -3 >> top_skills.txt
+
+grep -i br phrases2.txt | wc -l
+
+grep -iv br phrases2.txt | wc -l
+
+cat >> phrases2.txt 
+Brasil
+Argentina
+
+cat phrases2.txt countries.txt >> bunch_of_things.txt
+
+
