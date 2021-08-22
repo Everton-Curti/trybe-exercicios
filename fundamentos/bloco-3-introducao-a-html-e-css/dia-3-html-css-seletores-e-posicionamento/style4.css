@@ -1,0 +1,30 @@
+.borda:hover{
+    border-style: solid;
+    border-width: 2px;
+    
+}
+
+h3{
+    font-style: italic;
+}
+
+.blue{
+    border-color: blue;
+}
+
+.green{
+    border-color: green;
+}
+
+.red{
+    border-color: red;
+    font-size: 50px;
+}
+
+.black{
+    border-color: black;
+}
+
+.yellow{
+    border-color: yellow;
+}
