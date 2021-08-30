@@ -3,8 +3,8 @@ let symbol = '*';
 let inputString = '';
 let posicao = n;
 
-for (let index = 0; index <= n; index += 1){
-    for (let colIndex = 0; colIndex <= n; index += 1){
+for (let index = 0; index < n; index += 1){
+    for (let colIndex = 0; colIndex <= n; colIndex += 1){
         if (colIndex < posicao){
             inputString += ' '; 
         }else{
@@ -12,6 +12,6 @@ for (let index = 0; index <= n; index += 1){
         }
     }
     console.log(inputString);
-    inputString = ' ';
+    inputString = '';
     posicao -= 1;
 }
