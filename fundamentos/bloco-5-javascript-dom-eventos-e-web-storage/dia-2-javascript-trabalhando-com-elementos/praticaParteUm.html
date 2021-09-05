@@ -57,20 +57,103 @@
   </head>
   <body>
     <script>
+      // 1
       let insereHum = document.querySelector('body');
       let createHum = document.createElement('h1');
       createHum.innerText = 'Exercício 5.2 - JavaScript DOM';
       insereHum.appendChild(createHum);
 
+      // 2
       let insereMain = document.querySelector('body');
       let createMain = document.createElement('main');
       createMain.className = 'main-content';
       insereMain.appendChild(createMain);
 
+      // 3
       let insereSection = document.querySelector('main');
       let createSection = document.createElement('section');
       createSection.className = 'center-content';
       insereSection.appendChild(createSection);
+
+      // 4
+      //INSERINDO TAG P DE FORMA SMPLIFICADA
+      let createParagraph = document.createElement('p');
+      createParagraph.innerHTML = 'TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO';
+      createSection.appendChild(createParagraph);
+
+      // 5
+      //INSERINDO MAIS UMA SECTION DE FORMA SIMPLIFICADA
+      let createSectionTwo = document.createElement('section');
+      createSectionTwo.className = 'left-content';
+      createMain.appendChild(createSectionTwo);
+
+      // 6
+      let insereSectionThree = document.querySelector('main');
+      let createSectionThree = document.createElement('section');
+      createSectionThree.className = 'right-content';
+      insereSectionThree.appendChild(createSectionThree);
+
+      // 7
+      let createImg = document.createElement('img');
+      createImg.className = 'small-image';
+      createImg.src = 'https://picsum.photos/200';
+      createSectionTwo.appendChild(createImg);
+
+      // 8
+      let createUl = document.createElement('ul');
+      createSectionThree.appendChild(createUl);
+      let createList = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let index of createList){
+        let createLi = document.createElement('li');
+        createLi.innerHTML = index;
+        createUl.appendChild(createLi);                
+      }
+
+      // 9      
+      for (let index = 0; index < 3; index += 1){
+        let createHTres = document.createElement('h3');
+        createHTres.innerHTML = 'TATATATATTATA GGGGGGGGG 333333';
+        createMain.appendChild(createHTres);
+      }
+
+      //Parte 2
+
+      // 1
+      createHum.className = 'title';
+
+      // 2
+      let inserirClassHTres = document.querySelectorAll('h3');
+      for (let index of inserirClassHTres){
+        index.className = 'description';
+      }
+
+      // 3
+      let removeSectionFive = document.querySelector('.left-content');
+      createMain.removeChild(removeSectionFive);
+
+      // 4
+      let centerSectionSeis = document.querySelector('.right-content');
+      centerSectionSeis.style.marginRight = 'auto';
+
+      // 5
+      let changeBackgroundParent = document.querySelector('.center-content');
+      changeBackgroundParent.parentNode.style.backgroundColor = 'green';
+
+      //6
+      createUl.lastChild.remove();
+      createUl.lastChild.remove();
+      
+
+
+
+
+       
+
+      
+
+
+
+
     </script>
   </body>
 </html>
