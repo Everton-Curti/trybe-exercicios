@@ -48,3 +48,46 @@ function configurarBotaoFeriados(feriados){
     capturarDivBotao.appendChild(criarBotao);
 }
 configurarBotaoFeriados();
+
+function changeHoliday(){
+  let capturaBotao = document.querySelector('#btn-holiday');
+  let capturaClassHoliday = document.querySelectorAll('.holiday');
+  let backgroundColor = 'rgb(238,238,238)';
+  let novaCor = 'white';
+  
+  capturaBotao.addEventListener('click', function(){
+    for(let index = 0; index < capturaClassHoliday.length; index += 1){
+      if (capturaClassHoliday[index].backgroundColor === novaCor){
+        capturaClassHoliday[index].style.backgroundColor = backgroundColor;
+      } else {
+        capturaClassHoliday[index].style.backgroundColor = novaCor;
+      }
+    }
+  })
+}
+changeHoliday();
+
+function configurarBotaoSextaFeira(sextaFeira){
+  let capturarDivPai = document.querySelector('.buttons-container')
+  let criarBotaoSextaFeira = document.createElement('button');
+  criarBotaoSextaFeira.id = 'btn-friday';
+  criarBotaoSextaFeira.innerHTML = 'Sexta-Feira';
+  capturarDivPai.appendChild(criarBotaoSextaFeira);
+}
+configurarBotaoSextaFeira();
+
+function changeFriday(){
+  let capturaBotaoSextaFeira = document.querySelector('#btn-friday');
+  let capturaClasseSextaFeira = document.querySelectorAll('.friday');
+  let novoTexto = 'SEXTOU o/';
+  document.addEventListener('click', function(){
+    for (let index = 0; index < capturaClasseSextaFeira.length; index += 1){
+      if (capturaClasseSextaFeira[index].innerHTML !== novoTexto){
+        capturaClasseSextaFeira[index].innerHTML = novoTexto;
+      } else {
+        capturaClasseSextaFeira[index].innerHTML = capturaClasseSextaFeira[index];
+      }
+    }
+  })
+}
+changeFriday();
