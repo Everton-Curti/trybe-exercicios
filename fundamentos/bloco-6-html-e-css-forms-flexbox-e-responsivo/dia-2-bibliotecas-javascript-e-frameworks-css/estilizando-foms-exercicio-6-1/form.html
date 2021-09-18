@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css">  -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist---bibliotecas/css/bootstrap.min.css">   
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <header class="container text-center">
+        <h1 class = 'display-3 text-muted'>Formulário Para Cadastro de Currículo</h1>
+        <h2 class = 'display-3 text-muted'><em>Preencha os Campos Abaixo</em></h2>
+    </header>
+
+    <form action="#" method="GET" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="container">
+
+                <div class="container">
+                    <label for="nome">Nome:</label>
+                    <input class = 'form-control' type="text" id="nome" name="nome" maxlength="40" required>
+                </div>
+                <br>
+
+                <div class="container">
+                    <label for="email">Email:</label>
+                    <input class = 'form-control' type="email" id="email" name="email" maxlength="50" required>
+                </div>
+                <br>
+
+                <div class="container">
+                    <label for="cpf">CPF:</label>
+                    <input class = 'form-control' type="text" id="cpf" name="cpf" maxlength="11" required>
+                </div>
+                <br>
+
+                <div class="container">
+                    <label for="endereco">Endereço:</label>
+                    <input class = 'form-control' type="text" id="endereco" name="endereco" maxlength="200" required>
+                </div>
+                <br>
+
+                <div class="container">
+                    <label for="cidade">Cidade:</label>
+                    <input class = 'form-control' type="text" id="cidade" name="cidade" maxlength="28" required>
+                </div>
+                <br>
+
+                <div class="container">
+                    <label for="estado">Estado:</label>
+                    <select class = 'form-select' name="estado" id="estado" required></select>                
+                </div>
+                <br>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="casa">
+                        <input class="form-check-input" type="radio" name="moradia" id="casa">Casa
+                    </label>
+                </div>
+                <div class="form-check"></div>
+                    <label class="form-check-label" for="apt">
+                        <input class="form-check-input" type="radio" name="moradia" id="apt">Apartamento
+                    </label>  
+                </div>                                 
+                
+
+            </div>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Dados do Último Emprego</legend>
+
+            <div class="container">
+
+                <div class="container">
+                    <textarea class = 'form-control' name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required></textarea>
+                </div>
+                <br>
+
+                <div class="container">
+                    <label for="cargo">Cargo:</label>
+                    <input class = 'form-control' type="text" id="cargo" name="cargo" maxlength="40" required>
+                </div>
+                <br>
+
+                <div class="container">
+                    <label for="descricao-cargo">Descrição do Cargo:</label>
+                    <input class = 'form-control' type="text" id="descricao-cargo" name="descricao-cargo" maxlength="500" maxlength="40" required>
+                </div>
+                <br>
+
+                <div class="container">
+                    <label for="data-inicio">Data de Inicio:</label>
+                    <input class = 'form-control' type="date" id="data-inicio" name="data-inicio" required>
+                </div>
+                <br>
+
+            </div>
+
+        </fieldset>
+
+        <button class = 'btn btn-success' type="submit">Enviar</button>
+
+    </form>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.1.1-dist---bibliotecas/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
