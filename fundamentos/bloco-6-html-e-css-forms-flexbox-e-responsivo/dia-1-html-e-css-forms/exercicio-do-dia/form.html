@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">    
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulário Para Cadastro de Currículo</h1>
+        <h2>Preencha os Campos Abaixo</h2>
+    </header>
+
+    <form action="#" method="GET" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="form-row">
+
+                <div class="line-content">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" maxlength="40" required>
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" maxlength="50" required>
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" maxlength="11" required>
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" maxlength="200" required>
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" maxlength="28" required>
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado" required></select>                
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="casa">
+                        <input type="radio" name="moradia" id="casa">Casa
+                    </label>
+                    <label for="apt">
+                        <input type="radio" name="moradia" id="apt">Apartamento
+                    </label>                                   
+                </div>
+
+            </div>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Dados do Último Emprego</legend>
+
+            <div class="form-row">
+
+                <div class="line-content">
+                    <textarea name="resumo-curriculo" id="resumo-curriculo" cols="30" rows="10" maxlength="1000" required></textarea>
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" name="cargo" maxlength="40" required>
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="descricao-cargo">Descrição do Cargo:</label>
+                    <input type="text" id="descricao-cargo" name="descricao-cargo" maxlength="500" maxlength="40" required>
+                </div>
+                <br>
+
+                <div class="line-content">
+                    <label for="data-inicio">Data de Inicio:</label>
+                    <input type="date" id="data-inicio" name="data-inicio" required>
+                </div>
+                <br>
+
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
