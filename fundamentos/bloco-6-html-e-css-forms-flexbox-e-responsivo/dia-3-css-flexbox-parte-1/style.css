@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-trybe{
+    width: 50px;
+}
+
+.propaganda{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+img {
+    width: 150px;    
+}
+
+.progs{
+    border: 1px solid white;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: gray;
+    font-weight: 600;
+    border-radius: 5%;
+    line-height: 60px;
+}
+
+.imagens-one, .imagens-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr{
+    width: 500px;
+    margin: auto;    
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    margin: 20px;   
+}
+
+.redes{
+    margin: 10px;
+    width: 50px;
+}
+
