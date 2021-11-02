@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title, .footer {
+  font-size: 50px;
+  background-color: rgb(128,128,128);
+  padding: 25px;
+  text-align: center;
+  font-weight: 1000;
+  width: 100%;
+}
+
+.card {
+  border: 1px black solid;
+  border-radius: 20px;
+  margin: 20px;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  align-items: center;    
+  
+}
+
+.container {
+  display: inline-block;
+  text-align: center;  
+}
+
+.footer {  
+  bottom: 0;
+  position: fixed;
+}
+
